@@ -47,7 +47,7 @@ list-style:none;
 margin:0;
 padding:0;
 display:flex;
-background:#f4f4f4;
+background:#e4e7e8;
 border-bottom:1px solid #ccc;
 }
 
@@ -72,14 +72,16 @@ text-transform:uppercase;
 
 /* vertical lines between menu items */
 
-nav li:not(:last-child)::after{
-content:"";
-position:absolute;
-right:0;
-top:25%;
-height:50%;
-width:1px;
-background:#ac3434;
+nav li:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  right: 0;
+/* REMOVE OR COMMENT OUT THIS PART */
+/* top: 25%;             
+/* height: 50%;             <--- This line must be removed or commented out.
+/* REMOVE OR COMMENT OUT THE TWO LINES ABOVE */
+  width: 1px;
+  background: #e4e2e2;
 }
 
 nav a{
@@ -100,6 +102,7 @@ padding:30px;
 h2, h3{
 margin-top:20px;
 margin-bottom:10px;
+font-size: 2rem;
 }
 
 p{
@@ -190,7 +193,7 @@ fieldset input{
 
 fieldset label{
 display: inline;
-margin-right: 15px;
+margin-right: 5px;
 }
 
 
